@@ -96,4 +96,4 @@ Se você ainda não tem o Claude Code instalado, o guia completo está em
 
 Feito por [Ohana Taís](https://github.com/ohanatais) — Senior PM, construindo em público.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ohanatais-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ohanatais)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ohana-taís-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ohana-taís)
