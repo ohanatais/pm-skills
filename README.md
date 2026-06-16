@@ -1,10 +1,10 @@
 # pm-skills
 
-> Skills de Claude Code para cada etapa da jornada de produto — do zero ao lançamento.
+> Skills de Claude Code para o dia a dia de quem trabalha com produto.
 
-**Em PT-BR. Para quem está aprendendo e construindo ao mesmo tempo.**
+**Em PT-BR. Para o trabalho real e recorrente de Product Management.**
 
-Parte do ecossistema [build-from-zero](https://github.com/ohanatais/build-from-zero).
+Parte do ecossistema [build-from-zero](https://github.com/ohanatais/build-from-zero), com um foco diferente: enquanto os repos do build-from-zero te levam de uma ideia até o lançamento, o `pm-skills` é sobre o trabalho que se repete depois que o produto já existe e está em operação. Priorizar, especificar, comunicar, analisar. As tarefas de toda semana de um PM.
 
 ---
 
@@ -15,42 +15,54 @@ Quando você trabalha com Claude Code, ele lê essas skills automaticamente e sa
 exatamente qual framework, qual abordagem, e qual padrão aplicar para cada tarefa.
 
 Pensa assim: você não precisa mais explicar do zero o que quer que o Claude faça.
-A skill já carrega esse contexto — e ele executa como se fosse uma consultora especialista
-em cada área.
+A skill já carrega esse contexto, e ele executa como se fosse uma PM sênior do seu lado
+em cada tipo de tarefa.
 
 ---
 
-## Skills disponíveis
+## Onde o pm-skills se encaixa
 
-### Produto
+| | build-from-zero | pm-skills |
+|---|---|---|
+| Momento | tirar uma ideia do zero até o lançamento | tocar um produto que já está no ar |
+| Skills | pesquisa, validação, personas, posicionamento, marca, copy, build, go-to-market | descoberta, priorização, especificação, comunicação, análise |
+| Onde vivem | dentro de cada repo de conteúdo (product-thinking, brand-and-copy, etc.) | aqui |
+
+Um exemplo da diferença: o build-from-zero tem `prd`, a versão enxuta de PRD para um solo builder escrevendo do zero. O `pm-skills` cuida do PRD de um produto que **já existe** — refinar, versionar, manter coerência com o que já foi entregue.
+
+---
+
+## Skills planejadas
+
+> Esta lista é um rascunho de direção, não um compromisso fechado. Vai mudar conforme as
+> skills forem construídas e testadas no uso real.
+
+### Descoberta e priorização
 | Skill | O que faz |
 |---|---|
-| `pesquisa-de-mercado` | Pesquisa e análise de mercado estruturada | 
-| `validacao-de-ideia` | Framework de validação antes de escrever uma linha de código |
-| `personas` | Criação de personas com profundidade real, não cartão de visita |
-| `posicionamento` | Análise de oceano azul/vermelho, diferenciação e posicionamento |
-| `prd` | PRD enxuto para solo builders — o que é necessário, nada mais |
+| `discovery-continuo` | Roteiros de entrevista e síntese de sinais de descoberta contínua |
+| `priorizacao` | RICE, impacto-esforço e afins, para decidir com clareza o que entra agora |
+| `feedback-em-temas` | Transformar feedback solto (tickets, reviews, vendas) em temas acionáveis |
 
-### Marca e comunicação
+### Especificação e execução
 | Skill | O que faz |
 |---|---|
-| `identidade-visual` | Briefing de marca, paleta, tipografia e tom visual |
-| `tom-de-voz` | Definição de voz e tom para produto digital |
-| `copy-de-produto` | Copy de landing page, onboarding e produto que converte |
+| `refino-de-prd` | Refinar o PRD de um produto já em operação, mantendo coerência com o entregue |
+| `fatiar-epics` | Quebrar épicos em histórias finas, sequenciadas e independentes |
+| `criterios-de-aceite` | Escrever critérios de aceite claros e testáveis |
 
-### Build
+### Comunicação e stakeholders
 | Skill | O que faz |
 |---|---|
-| `decisoes-tecnicas` | Explica cada decisão técnica em linguagem humana |
-| `setup-de-ferramentas` | Guia de configuração (Supabase, Vercel, etc.) para não-devs |
+| `update-de-status` | Draft de update executivo e status report direto ao ponto |
+| `release-notes` | Release notes e changelog na voz do produto |
+| `narrativa-de-roadmap` | Transformar um roadmap em uma narrativa que convence |
 
-### Go-to-market
+### Análise
 | Skill | O que faz |
 |---|---|
-| `estrategia-de-lancamento` | Planejamento de lançamento para produto sem audiência |
-| `primeiros-usuarios` | Como conseguir os primeiros 10, 50, 100 usuários reais |
-
-**Legenda:** Skills marcadas com 🔄 estão em construção. As demais estão planejadas.
+| `metricas-e-kpis` | Definir a métrica ou KPI e a pergunta de produto que ela responde |
+| `teardown-competitivo` | Análise rápida de um concorrente com leitura acionável |
 
 ---
 
@@ -61,11 +73,11 @@ em cada área.
 git clone https://github.com/ohanatais/pm-skills.git
 
 # 2. Copie a skill desejada para o seu projeto
-cp -r pm-skills/pesquisa-de-mercado /seu-projeto/.claude/skills/
+cp -r pm-skills/priorizacao /seu-projeto/.claude/skills/
 
 # 3. No Claude Code, a skill é ativada automaticamente quando relevante
 #    Ou você pode invocar manualmente:
-#    /pesquisa-de-mercado
+#    /priorizacao
 ```
 
 Se você ainda não tem o Claude Code instalado, o guia completo está em
@@ -75,20 +87,21 @@ Se você ainda não tem o Claude Code instalado, o guia completo está em
 
 ## Status
 
+> Repo recém-reposicionado. Nenhuma skill construída ainda; tudo abaixo está planejado.
+
 | Skill | Status |
 |---|---|
-| `pesquisa-de-mercado` | 🔄 Em construção |
-| `validacao-de-ideia` | 📋 Planejada |
-| `personas` | 📋 Planejada |
-| `posicionamento` | 📋 Planejada |
-| `prd` | 📋 Planejada |
-| `identidade-visual` | 📋 Planejada |
-| `tom-de-voz` | 📋 Planejada |
-| `copy-de-produto` | 📋 Planejada |
-| `decisoes-tecnicas` | 📋 Planejada |
-| `setup-de-ferramentas` | 📋 Planejada |
-| `estrategia-de-lancamento` | 📋 Planejada |
-| `primeiros-usuarios` | 📋 Planejada |
+| `priorizacao` | 📋 Planejada |
+| `feedback-em-temas` | 📋 Planejada |
+| `discovery-continuo` | 📋 Planejada |
+| `refino-de-prd` | 📋 Planejada |
+| `fatiar-epics` | 📋 Planejada |
+| `criterios-de-aceite` | 📋 Planejada |
+| `update-de-status` | 📋 Planejada |
+| `release-notes` | 📋 Planejada |
+| `narrativa-de-roadmap` | 📋 Planejada |
+| `metricas-e-kpis` | 📋 Planejada |
+| `teardown-competitivo` | 📋 Planejada |
 
 ---
 
