@@ -1,112 +1,112 @@
 # pm-skills
 
-> Skills de Claude Code para o dia a dia de quem trabalha com produto.
+> Claude Code skills for the day-to-day work of people who build products.
 
-**Em PT-BR. Para o trabalho real e recorrente de Product Management.**
+**For the real, recurring work of Product Management.**
 
-Parte do ecossistema [build-from-zero](https://github.com/ohanatais/build-from-zero), com um foco diferente: enquanto os repos do build-from-zero te levam de uma ideia até o lançamento, o `pm-skills` é sobre o trabalho que se repete depois que o produto já existe e está em operação. Priorizar, especificar, comunicar, analisar. As tarefas de toda semana de um PM.
-
----
-
-## O que são skills de Claude Code?
-
-Skills são arquivos de instrução que ficam na pasta `.claude/skills/` do seu projeto.
-Quando você trabalha com Claude Code, ele lê essas skills automaticamente e sabe
-exatamente qual framework, qual abordagem, e qual padrão aplicar para cada tarefa.
-
-Pensa assim: você não precisa mais explicar do zero o que quer que o Claude faça.
-A skill já carrega esse contexto, e ele executa como se fosse uma PM sênior do seu lado
-em cada tipo de tarefa.
+Part of the [build-from-zero](https://github.com/ohanatais/build-from-zero) ecosystem, with a different focus: while the build-from-zero repos take you from an idea to launch, `pm-skills` is about the work that repeats once the product already exists and is running. Prioritizing, specifying, communicating, analyzing. A PM's weekly tasks.
 
 ---
 
-## Onde o pm-skills se encaixa
+## What are Claude Code skills?
+
+Skills are instruction files that live in your project's `.claude/skills/` folder.
+When you work with Claude Code, it reads those skills automatically and knows
+exactly which framework, which approach and which pattern to apply to each task.
+
+Think of it this way: you no longer have to explain from scratch what you want Claude to do.
+The skill already carries that context, and Claude works like a senior PM by your side
+on each type of task.
+
+---
+
+## Where pm-skills fits
 
 | | build-from-zero | pm-skills |
 |---|---|---|
-| Momento | tirar uma ideia do zero até o lançamento | tocar um produto que já está no ar |
-| Skills | pesquisa, validação, personas, posicionamento, marca, copy, build, go-to-market | descoberta, priorização, especificação, comunicação, análise |
-| Onde vivem | dentro de cada repo de conteúdo (product-thinking, brand-and-copy, etc.) | aqui |
+| Moment | taking an idea from zero to launch | running a product that's already live |
+| Skills | research, validation, personas, positioning, brand, copy, build, go-to-market | discovery, prioritization, specification, communication, analysis |
+| Where they live | inside each content repo (product-discovery, brand-and-copy, etc.) | here |
 
-Um exemplo da diferença: o build-from-zero tem `prd`, a versão enxuta de PRD para um solo builder escrevendo do zero. O `pm-skills` cuida do PRD de um produto que **já existe** — refinar, versionar, manter coerência com o que já foi entregue.
-
----
-
-## Skills planejadas
-
-> Esta lista é um rascunho de direção, não um compromisso fechado. Vai mudar conforme as
-> skills forem construídas e testadas no uso real.
-
-### Descoberta e priorização
-| Skill | O que faz |
-|---|---|
-| `discovery-continuo` | Roteiros de entrevista e síntese de sinais de descoberta contínua |
-| `priorizacao` | RICE, impacto-esforço e afins, para decidir com clareza o que entra agora |
-| `feedback-em-temas` | Transformar feedback solto (tickets, reviews, vendas) em temas acionáveis |
-
-### Especificação e execução
-| Skill | O que faz |
-|---|---|
-| `refino-de-prd` | Refinar o PRD de um produto já em operação, mantendo coerência com o entregue |
-| `fatiar-epics` | Quebrar épicos em histórias finas, sequenciadas e independentes |
-| `criterios-de-aceite` | Escrever critérios de aceite claros e testáveis |
-
-### Comunicação e stakeholders
-| Skill | O que faz |
-|---|---|
-| `update-de-status` | Draft de update executivo e status report direto ao ponto |
-| `release-notes` | Release notes e changelog na voz do produto |
-| `narrativa-de-roadmap` | Transformar um roadmap em uma narrativa que convence |
-
-### Análise
-| Skill | O que faz |
-|---|---|
-| `metricas-e-kpis` | Definir a métrica ou KPI e a pergunta de produto que ela responde |
-| `teardown-competitivo` | Análise rápida de um concorrente com leitura acionável |
+An example of the difference: build-from-zero has `prd`, the lean PRD for a solo builder writing from scratch. `pm-skills` handles the PRD of a product that **already exists**: refining it, versioning it, keeping it consistent with what has already shipped.
 
 ---
 
-## Como instalar e usar
+## Planned skills
+
+> This list is a draft direction, not a firm commitment. It will change as the
+> skills are built and tested in real use.
+
+### Discovery and prioritization
+| Skill | What it does |
+|---|---|
+| `continuous-discovery` | Interview scripts and synthesis of continuous discovery signals |
+| `prioritization` | RICE, impact-effort and similar, to decide clearly what goes in now |
+| `feedback-to-themes` | Turn scattered feedback (tickets, reviews, sales) into actionable themes |
+
+### Specification and execution
+| Skill | What it does |
+|---|---|
+| `prd-refinement` | Refine the PRD of a product already in operation, keeping it consistent with what shipped |
+| `epic-slicing` | Break epics into thin, sequenced, independent stories |
+| `acceptance-criteria` | Write clear, testable acceptance criteria |
+
+### Communication and stakeholders
+| Skill | What it does |
+|---|---|
+| `status-update` | Draft an executive update or a to-the-point status report |
+| `release-notes` | Release notes and changelog in the product's voice |
+| `roadmap-narrative` | Turn a roadmap into a narrative that persuades |
+
+### Analysis
+| Skill | What it does |
+|---|---|
+| `metrics-and-kpis` | Define the metric or KPI and the product question it answers |
+| `competitive-teardown` | Quick analysis of a competitor with an actionable read |
+
+---
+
+## How to install and use
 
 ```bash
-# 1. Clone este repositório
+# 1. Clone this repository
 git clone https://github.com/ohanatais/pm-skills.git
 
-# 2. Copie a skill desejada para o seu projeto
-cp -r pm-skills/priorizacao /seu-projeto/.claude/skills/
+# 2. Copy the skill you want into your project
+cp -r pm-skills/prioritization /your-project/.claude/skills/
 
-# 3. No Claude Code, a skill é ativada automaticamente quando relevante
-#    Ou você pode invocar manualmente:
-#    /priorizacao
+# 3. In Claude Code, the skill activates automatically when relevant
+#    Or you can invoke it manually:
+#    /prioritization
 ```
 
-Se você ainda não tem o Claude Code instalado, o guia completo está em
+If you don't have Claude Code installed yet, the full guide is in
 [build-with-claude](https://github.com/ohanatais/build-with-claude).
 
 ---
 
 ## Status
 
-> Repo recém-reposicionado. Nenhuma skill construída ainda; tudo abaixo está planejado.
+> Recently repositioned repo. No skills built yet; everything below is planned.
 
 | Skill | Status |
 |---|---|
-| `priorizacao` | 📋 Planejada |
-| `feedback-em-temas` | 📋 Planejada |
-| `discovery-continuo` | 📋 Planejada |
-| `refino-de-prd` | 📋 Planejada |
-| `fatiar-epics` | 📋 Planejada |
-| `criterios-de-aceite` | 📋 Planejada |
-| `update-de-status` | 📋 Planejada |
-| `release-notes` | 📋 Planejada |
-| `narrativa-de-roadmap` | 📋 Planejada |
-| `metricas-e-kpis` | 📋 Planejada |
-| `teardown-competitivo` | 📋 Planejada |
+| `prioritization` | 📋 Planned |
+| `feedback-to-themes` | 📋 Planned |
+| `continuous-discovery` | 📋 Planned |
+| `prd-refinement` | 📋 Planned |
+| `epic-slicing` | 📋 Planned |
+| `acceptance-criteria` | 📋 Planned |
+| `status-update` | 📋 Planned |
+| `release-notes` | 📋 Planned |
+| `roadmap-narrative` | 📋 Planned |
+| `metrics-and-kpis` | 📋 Planned |
+| `competitive-teardown` | 📋 Planned |
 
 ---
 
-## Sobre
+## About
 
-Feito por [Ohana Taís](https://github.com/ohanatais) — Senior PM, construindo em público.
+Made by [Ohana Taís](https://github.com/ohanatais), Senior PM, building in public.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ohanatais-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ohana-taís)
